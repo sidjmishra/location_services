@@ -117,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode == MY_PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION) {
             if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 // Add some logic
+                // https://developer.android.com/training/location/retrieve-current
             } else {
 
             }
