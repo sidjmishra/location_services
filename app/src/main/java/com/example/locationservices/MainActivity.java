@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     Manifest.permission.ACCESS_COARSE_LOCATION)) {
                 new AlertDialog.Builder(this)
                         .setTitle("Required Location Permission")
-                        .setMessage("You have to give this permission to access the feature")
+                        .setMessage("Ypu have to give this permission to access the feature")
                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
