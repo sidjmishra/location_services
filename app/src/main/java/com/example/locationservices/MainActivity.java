@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     Manifest.permission.ACCESS_COARSE_LOCATION)) {
                 new AlertDialog.Builder(this)
                         .setTitle("Required Location Permission")
-                        .setMessage("Ypu have to give this permission to access the feature")
+                        .setMessage("You have to give this permission to access the feature")
                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -109,18 +109,5 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-//        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if(requestCode == MY_PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION) {
-            if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // Add some logic
-                // https://developer.android.com/training/location/retrieve-current
-            } else {
-
-            }
-        }
     }
 }
